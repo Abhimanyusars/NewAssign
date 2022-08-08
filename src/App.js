@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Drive from './components/Drive';
+import Dropbox from './components/Dropbox';
+import Searchterm from './components/Searchterm/Index';
+
+
+// const APP_KEY = "vneeimtjtjr1vo7";
 
 function App() {
+  // const [url,setUrl] = useState("")
+  // const handleSuccess = (files) => {
+  //   setUrl(files[0].thumbnailLink)
+  //   console.log(url)
+  // }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Drive></Drive>
+      <Dropbox></Dropbox>
+      <Searchterm></Searchterm>
+      
+      
+      
     </div>
+    
   );
 }
 
